@@ -1,0 +1,498 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --global-primary-color: white;
+  --global-header-primary: #FBB12D;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("./fonts//Open_Sans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Medium";
+  src: url("./fonts//Open_Sans/OpenSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("./fonts//Open_Sans/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("./fonts//Open_Sans/OpenSans-Bold.ttf");
+}
+
+/* END FONTS */
+
+/* CONTAINER PAGE */
+
+.container_page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#myCarousel {
+  width: 720px;
+  padding: 0rem;
+  margin-top: 1.87rem;
+  margin-left: 0rem;
+}
+
+.btn_sale{
+  width: 148px;
+  padding: 1rem;
+  margin-top: 1.2rem;
+  height: 43px;
+  border: none;
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: "OpenSans-Medium";
+  font-size: 0.9rem;
+  color: black;
+  background-color: #FBB12D;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.container_frete > img{
+  width: 50px;
+  height: 50px;
+}
+
+.container_frete > p{
+  font-family: "OpenSans-Medium";
+  margin-top: 0.1rem;
+  font-size: 0.9rem;
+}
+
+.container_frete{
+  margin-top: 2rem;
+  border-top: 1px solid black;
+}
+
+
+
+.btn_cart {
+  width: 188px;
+  padding: 1rem;
+  margin-top: 3rem;
+  height: 49px;
+  border: none;
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: "OpenSans-Medium";
+  font-size: 0.8rem;
+  color: white;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.btn_cart > svg{
+  position: relative;
+  left: 5px;
+}
+
+.carousel-caption > p {
+  margin-top: 2rem;
+}
+
+/* HEADER */
+
+.header {
+  background: var(--global-header-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 154px;
+  padding-left: 8rem;
+  padding-right: 8rem;
+
+}
+
+.detailsProduct{
+  font-family: "OpenSans-Medium";
+  font-size: 1.3rem;
+  border-bottom: 1px solid #858585;
+}
+
+.header>.company_icon {
+  width: 140px;
+  height: 140px;
+}
+
+input[type="text"]{
+  outline: none;
+  font-size: 0.9rem;
+  font-family: "OpenSans-Medium";
+  border: 1px solid #858585;
+  border-radius: 5px;
+  height: 35px;
+}
+
+.container_select{
+  margin-top: 1.9rem;
+}
+
+.container_select > p {
+  font-family: "OpenSans-Medium";
+  height: 19px;
+}
+
+.container_select > select{
+  appearance: none;
+  width: 100%;
+  height: 42px;
+  outline: none;
+  font-family: "OpenSans-Medium";
+  font-size: 0.9rem;
+  padding-left: 0.9rem;
+  border: 1px solid #858585;
+  border-radius: 5px;
+}
+
+
+/* END HEADER */
+
+
+/* HEADER SECONDARY */
+
+.container_header_secondary {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  height: 42px;
+  justify-content: center;
+  border-bottom: 1px solid #E5E5E5;
+
+}
+
+
+
+.container_header_secondary>.dropdown>button {
+  background-color: #333333;
+  width: 230px;
+  border: none;
+  font-family: "OpenSans-SemiBold";
+  color: white;
+  padding: 0.6rem;
+  display: flex;
+  font-size: 0.87rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 43px;
+}
+
+.dropdown-menu {
+  transition: all .2s;
+  width: 100%;
+}
+
+nav {
+  margin-left: 1.87rem;
+  height: 23px;
+}
+
+nav>ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 0.97rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-right: 2.31rem;
+  font-family: "OpenSans-Bold";
+}
+
+/* END HEADER SECONDARY */
+
+.header_search {
+  display: flex;
+  height: 42px;
+  margin-left: 4rem;
+  align-items: center;
+}
+
+.header_search>div {
+  display: flex;
+  cursor: pointer;
+  width: 47px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.7rem;
+  height: 42px;
+  border: 1.1px solid #E5E5E5;
+}
+
+.container_carrousel{
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+
+}
+
+.container_row_card{
+  display: flex;
+  align-items: center;
+}
+
+.container_vertical_banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_vertical_banner > img {
+  width: 300px;
+  margin-top: 30px;
+  cursor: pointer;
+  height: 197px;
+}
+
+.container_card {
+  display: flex;
+  width: 1420px;
+  flex-direction: column;
+}
+
+footer{
+  width: 100%;
+  height: 210px;
+  background-color: #F6F7F7;
+}
+
+.container_card > p {
+  margin-top: 2rem;
+  position: relative;
+
+  font-family: "OpenSans-Bold";
+  font-size: 1.25rem;
+  margin-left: 4rem;
+}
+
+.text_card_description{
+  font-family: "OpenSans-Bold";
+  font-size: 0.95rem;
+}
+
+.text_card_price{
+  font-family: "OpenSans-Medium";
+}
+
+.container_card > p::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width:220px;
+  border: 1px solid #000000;
+}
+
+.card:hover {
+  transition: all .2s;
+  transform: translate(0%, -5%);
+  border: 1px solid #3333337b;
+}
+
+.card {
+  cursor: pointer;
+  transition: all .2s;
+  padding: 0.9rem;
+  font-family: "OpenSans-Medium";
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.301);
+  margin-top: 2rem;
+  width: 294px;
+  margin-left: 4rem;
+  height: 500px;
+  border-radius: 10px;
+  border: 1px solid #cccc;
+}
+
+.container_product{
+  width: 100%;
+
+  margin-top: 5rem;
+  display: flex;
+
+  justify-content: center;
+
+}
+
+.textPriceContainerProductPromotional{
+  color: #333333;
+  height: 20px;
+  margin-top: 1.2rem;
+  font-family: "OpenSans-SemiBold";
+  font-size: 1.31rem;
+}
+
+
+.textPriceContainerProduct{
+  color: #333333;
+  height: 20px;
+  font-family: "OpenSans-SemiBold";
+  font-size: 1.61rem;
+}
+
+.container_product > div > .textPrimaryContainerProduct {
+  color: 333333;
+  height: 20px;
+  font-family: "OpenSans-Medium";
+  font-size: 1.31rem;
+}
+.container_product > div > .textSecondaryContainerProduct {
+  color: #333333;
+  height: 13px;
+  font-family: "OpenSans-Regular";
+  font-size: 0.9rem;
+}
+
+.textDescriptionContainerProduct{
+  margin-top:2rem;
+  width: 450px;
+  font-size: 0.9rem;
+  font-family: "OpenSans-Medium";
+
+}
+
+
+.container_product_row > img{
+  width: 490px;
+  margin-right: 4rem;
+  height: 490px;
+}
+
+.top_image_card {
+  object-fit: contain;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  right: 15px;
+  top: 2px;
+}
+
+.carousel-caption{
+  height: 320px;
+}
+
+.descount_card {
+  display: flex;
+  padding-top: 0.9rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  color: white;
+  border-radius: 100px;
+  background-color: #858585;
+}
+
+.descount_card>p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-family: "OpenSans-Medium";
+}
+
+
+.center_image_card {
+  margin-top: 2rem;
+}
+
+
+@media screen and (max-width:1126px) {
+
+  nav {
+    display: none;
+  }
+
+  .container_card {
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  #myCarousel {
+    width: 100%;
+    padding: 0rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+  }
+
+  .carousel-item>img {
+    width: 100%;
+    object-fit: cover;
+    height: 320px;
+  }
+
+  .container_carrousel{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container_header_secondary {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 42px;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    border-bottom: 1px solid #E5E5E5;
+  }
+
+
+  .card {
+    cursor: pointer;
+    transition: all .2s;
+    padding: 0.9rem;
+    font-family: "OpenSans-Medium";
+  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.301);
+    margin-top: 3rem;
+    width: 294px;
+    margin-left: 0rem;
+    height: 500px;
+    border-radius: 10px;
+    border: 1px solid #cccc;
+  }
+
+  .header_search {
+    display: flex;
+    justify-content: space-between;
+    height: 42px;
+    margin-left: 0rem;
+    align-items: center;
+  }
+
+
+  .carousel-caption > p {
+    display: none;
+  }
+  .carousel-caption{
+    height: 190px;
+  }
+}
+
+/* CARROUSEL CODE */

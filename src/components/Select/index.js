@@ -7,6 +7,9 @@ const Select = ({name}) => {
         <p>{name}</p>
         <select>
             <option value="test" style={{fontFamily:"sans serif"}}> --- Escolha ---</option>
+            <option value="test" style={{fontFamily:"sans serif"}}> --- Escolha ---</option>
+            <option value="test" style={{fontFamily:"sans serif"}}> --- Escolha ---</option>
+
         </select>
         </div>
     )

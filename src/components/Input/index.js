@@ -1,9 +1,10 @@
 import React from 'react'
+import InputMask from 'react-input-mask';
 
-const Input = ({placeholder}) => {
+const Input = ({placeholder,mask}) => {
     return(
 
-        <input type='text' placeholder={placeholder}/>
+        <InputMask className='input_frete' mask={mask} placeholder={placeholder}/>
 
     )
 }

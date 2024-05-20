@@ -9,7 +9,7 @@ import Product from '../pages/Product'
 const AppStack = () => {
     return (
 
-        <BrowserRouter>
+        <BrowserRouter >
             <Routes>
                 <Route path='/' element={<Landing/>} />
                 <Route path='/accessories' element={<Accessories/>} />

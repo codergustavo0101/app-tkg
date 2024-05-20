@@ -1,9 +1,14 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import { useNavigate } from 'react-router-dom'
 import dropdownIcon from '../../images/svg/dropdownIcon.svg'
 import searchIcon from '../../images/svg/searchIcon.svg'
 import userIcon from '../../images/svg/userIcon.svg'
+import { CartContext } from '../../context/cart'
+
 const HeaderSecondary = () => {
+
+    const {handleStateCart} = useContext(CartContext)
+
 
     const navigate = useNavigate()
 

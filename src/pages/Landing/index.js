@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import Container from '../../components/Container'
 import Header from '../../components/Header'
+import SidebarCart from '../../components/SidebarCart'
 import HeaderSecondary from '../../components/HeaderSecondary'
 import Carrousel from '../../components/Carrousel'
 import ContainerCard from '../../components/ContainerCard'
@@ -16,21 +17,26 @@ import volkswagen from '../../images/png/png-transparent-volkswagen-hd-logo-remo
 import ContainerVerticalBanner from '../../components/ContainerVerticalBanner'
 import ContainerRowCard from '../../components/ContainerRowCard'
 import Footer from '../../components/Footer'
+import { CartContext } from '../../context/cart'
 const Landing = () => {
+
+    const {cart,cartLenght,stateCart,handleAddToCart} = useContext(CartContext)
+
     return(
         <Container>
-            <Header/>
+            <Header data={cartLenght}/>
             <HeaderSecondary/>
+            <SidebarCart state={stateCart} />
             <ContainerCarrousel>
             <Carrousel/>
             <ContainerVerticalBanner/>
             </ContainerCarrousel>
             <ContainerCard name={"Engates com Rabicho Fixo"}>   
             <ContainerRowCard>
-            <Card topImage={toyotaLogo} description={"Engate Rabicho Removivel Pajero TR4 2008 a 2013 1000Kg"} price={"R$587.90"} image={"https://firebasestorage.googleapis.com/v0/b/storage-tkg.appspot.com/o/2240a979b0eddbab2223d5aae5a1d99e.webp?alt=media&token=041b005b-397f-41d3-936a-ee57269e2e95"}/>
-            <Card topImage={mitsubshiLogo} description={"Engate Rabicho Removivel Pajero TR4 2008 a 2013 1000Kg"} price={"R$605.90"} image={image}/>
-            <Card topImage={fiatIcon} image={image2} description={"Engate Reboque Rabicho Fixo Amarok 2010 a 2021 1000Kg"}  price={"R$499.90"}/>
-            <Card topImage={volkswagen} image={image3} description={"Engate Reboque Rabicho Fixo Polo Hatch 2018 a 2023 600Kg"} price={"R$335.90"}/>
+            <Card onClick={() => handleAddToCart(1)} topImage={toyotaLogo} description={"Engate Rabicho Removivel Pajero TR4 2008 a 2013 1000Kg"} price={"R$587.90"} image={"https://firebasestorage.googleapis.com/v0/b/storage-tkg.appspot.com/o/2240a979b0eddbab2223d5aae5a1d99e.webp?alt=media&token=041b005b-397f-41d3-936a-ee57269e2e95"}/>
+            <Card onClick={() => handleAddToCart(2)}topImage={mitsubshiLogo} description={"Engate Rabicho Removivel Pajero TR4 2008 a 2013 1000Kg"} price={"R$605.90"} image={image}/>
+            <Card onClick={() => handleAddToCart(3)}topImage={fiatIcon} image={image2} description={"Engate Reboque Rabicho Fixo Amarok 2010 a 2021 1000Kg"}  price={"R$499.90"}/>
+            <Card onClick={() => handleAddToCart(4)}topImage={volkswagen} image={image3} description={"Engate Reboque Rabicho Fixo Polo Hatch 2018 a 2023 600Kg"} price={"R$335.90"}/>
             </ContainerRowCard>
             </ContainerCard>
             <ContainerCard name={"Engates com Rabicho Removível"}>   

@@ -50,6 +50,117 @@ code {
   align-items: center;
 }
 
+.container_filter_options{
+  padding-left: 2rem;
+}
+
+.filter > button{
+  font-family: "OpenSans-SemiBold"; 
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  border: none;
+  color: white;
+  background-color: #333333;
+  height: 50px;
+}
+
+.select_filter{
+  width: 220px;
+  font-family: "OpenSans-SemiBold"; 
+  font-size: 0.9rem;
+  border-radius: 5px;
+  outline: none;
+  height: 30px;
+  border: 1px solid #858585;
+}
+
+.container_checkbox > div{
+  display: flex;
+  margin-bottom: 1.0rem;
+  align-items: center;
+}
+
+.container_checkbox > div > img {
+  position: absolute;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.container_checkbox > div > input[type="checkbox"]{
+  appearance: none;
+  width: 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  height: 15px;
+  border: 1px solid #333333;
+}
+
+.container_checkbox > div > input[type="checkbox"]:checked{
+
+  background-color:#333333;
+
+}
+
+
+.container_checkbox > div > label {
+  height: 23px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-family: "OpenSans-SemiBold"; 
+  margin-left: 0.9rem;
+}
+
+.row_models > img {
+  margin-right: 1.2rem;
+  width: 70px;
+  border: 1px solid #333333;
+  object-fit: cover;
+  height:70px;
+  border-radius: 100px;
+}
+
+
+.container_filter_options > p {
+  margin-top: 1.3rem;
+  font-size: 1.0rem;
+  text-transform: uppercase;
+  font-family: "OpenSans-SemiBold";
+  color: black;
+}
+
+
+.container_row_filter{
+  display: flex;
+  justify-content: space-between;
+  width: 1080px;
+}
+
+.container_row_acessories{
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+}
+
+.filter{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 270px;
+  height: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.32);
+  background-color: white;
+}
+
+.container_page_acessories{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
 #myCarousel {
   width: 720px;
@@ -226,7 +337,7 @@ nav {
   height: 23px;
 }
 
-nav>ul li {
+nav > ul li {
   list-style: none;
   display: inline-block;
   font-size: 0.97rem;
@@ -234,6 +345,15 @@ nav>ul li {
   cursor: pointer;
   margin-right: 2.31rem;
   font-family: "OpenSans-Bold";
+}
+
+
+.li_header_secondary:hover::after{
+  content: "";
+  transition: all 2s;
+  display: block;
+  width: 25px;
+  border-bottom: 2px solid #000000;
 }
 
 /* END HEADER SECONDARY */
@@ -321,7 +441,7 @@ footer {
 }
 
 .card:hover {
-  transition: all .2s;
+  
   transform: translate(0%, -5%);
   border: 1px solid #3333337b;
 }
@@ -754,3 +874,36 @@ footer {
 }
 
 /* CARROUSEL CODE */
+
+
+/* For Firefox browsers */
+.thumb::-moz-range-thumb {
+  background-color: #f1f5f7;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+
+
+::-webkit-scrollbar {
+  width: 8.5px;
+  height: 15px;
+  background: #d8d8d8;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d8d8d8;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.33);
+  border-radius: 10px;
+}

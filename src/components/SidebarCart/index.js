@@ -5,11 +5,6 @@ const SidebarCart = ({ state }) => {
 
     const { handleStateCart } = useContext(CartContext)
 
-    const handleButton = () => {
-        
-    }
-
-
     return (
 
         state == true
@@ -61,10 +56,10 @@ const SidebarCart = ({ state }) => {
                     </div>
 
                 </div>
-            
+
 
                 <div className='bottom_price_sidebar'>
-                <p className='total_cart'>Total R$ 1.174,00</p>
+                    <p className='total_cart'>Total R$ 1.174,00</p>
                 </div>
 
                 <div className='container_button_sidebar_cart'>

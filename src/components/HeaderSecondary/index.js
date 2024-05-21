@@ -20,6 +20,19 @@ const HeaderSecondary = () => {
         navigate("/accessories")
     }
 
+    const redirectToAccountPage = () => {
+        navigate("/account")
+    }
+
+    const redirectToBlogPage = () => {
+        navigate("/blog")
+    }
+
+    const redirectToOfferPage = () => {
+        navigate("/offer")
+
+    }
+
     return (
 
         <div className="container_header_secondary">
@@ -38,12 +51,12 @@ const HeaderSecondary = () => {
 
             <nav>
                 <ul>
-                    <li onClick={() => redirectToHomePage()}>Home</li>
-                    <li onClick={() => redirectToAcessoriePage()}>Acessórios</li>
-                    <li>Ofertas</li>
-                    <li>Blog</li>
-                    <li>Carrinho</li>
-                    <li>Contato</li>
+                    <li className='li_header_secondary' onClick={() => redirectToHomePage()}>Home</li>
+                    <li className='li_header_secondary' onClick={() => redirectToAcessoriePage()}>Acessórios</li>
+                    <li className='li_header_secondary' onClick={() => redirectToOfferPage()}>Ofertas</li>
+                    <li className='li_header_secondary' onClick={() => redirectToBlogPage()}>Blog</li>
+                    <li className='li_header_secondary'>Carrinho</li>
+                    <li className='li_header_secondary'>Contato</li>
 
                 </ul>
             </nav>
@@ -54,7 +67,7 @@ const HeaderSecondary = () => {
                     <img src={searchIcon} />
                 </div>
 
-                <div>
+                <div onClick={() => redirectToAccountPage()}>
                     <img src={userIcon} />
                 </div>
 

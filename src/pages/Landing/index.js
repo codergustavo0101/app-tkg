@@ -24,6 +24,7 @@ const Landing = () => {
 
     return(
         <Container>
+            
             <Header data={cartLenght}/>
             <HeaderSecondary/>
             <SidebarCart state={stateCart} />

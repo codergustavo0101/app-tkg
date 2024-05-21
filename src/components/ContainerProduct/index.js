@@ -4,7 +4,8 @@ import ReactStars from 'react-stars'
 import Input from '../Input'
 import ReactPlayer from 'react-player';
 
-
+import primaryIcon from '../../images/png/consumo-pajero-tr4-2-0-4x4-2.jpg'
+import secondaryIcon from '../../images/png/maxresdefault.jpg'
 import Select from '../Select'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -22,7 +23,7 @@ const ContainerProduct = () => {
     const items = [
         "https://firebasestorage.googleapis.com/v0/b/storage-tkg.appspot.com/o/2240a979b0eddbab2223d5aae5a1d99e.webp?alt=media&token=041b005b-397f-41d3-936a-ee57269e2e95",
         "https://firebasestorage.googleapis.com/v0/b/storage-tkg.appspot.com/o/2240a979b0eddbab2223d5aae5a1d99e.webp?alt=media&token=041b005b-397f-41d3-936a-ee57269e2e95",
-        "https://www.youtube.com/watch?v=sutEBPPYzl4",
+        "https://www.youtube.com/watch?v=3WyYq0GYuto",
 
     ];
 
@@ -79,12 +80,9 @@ const ContainerProduct = () => {
                     <p className='textSecondaryContainerProduct'>Compativel com os seguintes modelos:</p>
 
                     <div className='row_models'>
-
-                        <div>
-
-
-
-                        </div>
+                        
+                        <img src={primaryIcon}/>
+                        <img src={secondaryIcon}/>
 
                     </div>
 

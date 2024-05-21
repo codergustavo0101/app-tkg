@@ -6,11 +6,12 @@ const Select = ({name}) => {
         <div className='container_select'>
         <p>{name}</p>
         <select>
-            <option value="test" style={{fontFamily:"sans serif"}}> --- Escolha ---</option>
-            <option value="test" style={{fontFamily:"sans serif"}}> --- Escolha ---</option>
-            <option value="test" style={{fontFamily:"sans serif"}}> --- Escolha ---</option>
+            <option value="test" > --- Escolha ---</option>
+            <option value="test" > --- Escolha ---</option>
+            <option value="test" > --- Escolha ---</option>
 
         </select>
+        
         </div>
     )
 }
